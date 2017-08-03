@@ -57,7 +57,7 @@ The steps are listed below:
 #### 1. Provide an example of a distortion-corrected image.
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![Calibrated Chessboard Image][image2]
+![Calibrated Chessboard Image](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/laneImage.png)
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 I used various methods to come out with clean pipeline, and this process consumed most of the time, here is what worked for me.
@@ -120,6 +120,7 @@ From second frame onwards:
 5. If MSE of the current frame is out by 5*margin(margin is 100) then use the last frame's lane because current lane is far away from where it should be. I arrived at 5*margin(500) after hit and trial and printing MSE for all the frame and distored frames had MSE more than 500. This step consumed most of the time in drawing pipeline
 
 ![pipeline](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/filledLaneLineonPerspectiveBlankImage.png)
+
 
 ![pipeln1](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/filledLaneLineonUndistortedOriginalBlankImage.png)
 
