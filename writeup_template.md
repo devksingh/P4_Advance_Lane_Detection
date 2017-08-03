@@ -100,7 +100,7 @@ This resulted in the following source and destination points:
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
 ![Perspective transform](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/perspectiveLaneImg.png)
-(https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/perspectiveLaneImage.png)
+![Perspective transform1](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/perspectiveLaneImage.png)
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
@@ -117,7 +117,7 @@ From second frame onwards:
 2. Stored the last frame's lane quardretic function and points
 3. If no lane detected then use the last frame's lane
 4. On every frame I took pixel by pixel difference using MSE (mean squared error) from current frame line with last frame lines
-5. If MSE of the current frame is out by 5*margin(margin is 100) then use the last frame's lane because current lane is far away from where it should be. I arrived at 5*margin(500) after hit and trial and printing MSE for all the frame and distored frames had MSE more than 500. This step consumed most of the time in drawing pipeline
+5. If MSE of the current frame is out by 5 x margin(margin is 100) then use the last frame's lane because current lane is far away from where it should be. I arrived at 5 x margin(500) after hit and trial and printing MSE for all the frame and distored frames had MSE more than 500. This step consumed most of the time in drawing pipeline
 
 ![pipeline](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/filledLaneLineonPerspectiveBlankImage.png)
 
