@@ -120,7 +120,8 @@ From second frame onwards:
 5. If MSE of the current frame is out by 5*margin(margin is 100) then use the last frame's lane because current lane is far away from where it should be. I arrived at 5*margin(500) after hit and trial and printing MSE for all the frame and distored frames had MSE more than 500. This step consumed most of the time in drawing pipeline
 
 ![pipeline](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/filledLaneLineonPerspectiveBlankImage.png)
-![pipeline1](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/filledLaneLineonUndistortedOriginalBlankImage.png)
+
+![pipeln1](https://github.com/devksingh/P4_Advance_Lane_Detection/blob/master/images/filledLaneLineonUndistortedOriginalBlankImage.png)
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
